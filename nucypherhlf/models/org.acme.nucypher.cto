@@ -48,3 +48,37 @@ transaction  storehash {
   o String pid
 }
 
+concept  Pid {
+  o String  value
+  o String hash
+  o String[] proof
+}
+
+concept  Name {
+  o String  value
+  o String hash
+  o String[] proof
+
+}
+
+concept  Gender {
+  o String  value
+  o String hash
+  o String[] proof
+
+}
+
+concept  Claim_data {
+  o String  value
+  o String hash
+  o String[] proof
+
+}
+
+asset Mtree identified by mroot{
+  o String mroot
+  o Pid pid
+  o Name name
+  o Gender gender
+  o Claim_data claim_data
+}
