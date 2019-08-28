@@ -51,27 +51,27 @@ transaction  storehash {
 concept  Pid {
   o String  value
   o String hash
-  o String[] proof
+  o Pf[] proof
 }
 
 concept  Name {
   o String  value
   o String hash
-  o String[] proof
+  o Pf[] proof
 
 }
 
 concept  Gender {
   o String  value
   o String hash
-  o String[] proof
+  o Pf[] proof
 
 }
 
 concept  Claim_data {
   o String  value
   o String hash
-  o String[] proof
+  o Pf[] proof
 
 }
 
@@ -81,4 +81,9 @@ asset Mtree identified by mroot{
   o Name name
   o Gender gender
   o Claim_data claim_data
+}
+
+concept Pf {
+  o String direction
+  o String hash
 }
