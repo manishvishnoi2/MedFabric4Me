@@ -75,8 +75,9 @@ concept  Claim_data {
 
 }
 
-asset Mtree identified by mroot{
+asset Mtree identified by email{
   o String mroot
+  o String email
   o Pid pid
   o Name name
   o Gender gender
